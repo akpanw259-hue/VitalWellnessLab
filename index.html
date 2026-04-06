@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finally Feel Like Yourself Again | Women's Hormone Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rose:        #b85460;
+    --rose-dark:   #8c3a44;
+    --rose-light:  #f7eaec;
+    --cream:       #fdf9f4;
+    --parchment:   #f5ede0;
+    --brown:       #4a3028;
+    --brown-mid:   #7a5048;
+    --muted:       #8a6a60;
+    --gold:        #c8a96a;
+    --gold-light:  #f7f0e2;
+    --white:       #ffffff;
+    --charcoal:    #1e1010;
+    --pad-v:       84px;
+    --pad-h:       28px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+    line-height: 1.72;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HELPERS ── */
+  .wrap  { max-width:  920px; margin: 0 auto; padding: 0 var(--pad-h); }
+  .wideW { max-width: 1140px; margin: 0 auto; padding: 0 var(--pad-h); }
+  .serif { font-family: 'Cormorant Garamond', serif; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .gold-rule {
+    display: block;
+    width: 44px; height: 2px;
+    background: var(--gold);
+    margin-bottom: 18px;
+    border-radius: 2px;
+  }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: transform .18s, box-shadow .18s, background .18s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-rose {
+    background: var(--rose);
+    color: #fff;
+    padding: 17px 40px;
+    box-shadow: 0 6px 24px rgba(184,84,96,.32);
+  }
+  .btn-rose:hover { background: var(--rose-dark); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(184,84,96,.38); }
+
+  .btn-white {
+    background: #fff;
+    color: var(--rose-dark);
+    padding: 17px 40px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.18);
+  }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,.22); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--rose);
+    padding: 15px 38px;
+    border: 2px solid var(--rose);
+  }
+  .btn-outline:hover { background: var(--rose-light); }
+
+  /* ══════════════════════════════════════
+     ANNOUNCEMENT BAR
+  ══════════════════════════════════════ */
+  .ann-bar {
+    background: var(--brown);
+    color: var(--gold-light);
+    text-align: center;
+    padding: 11px 24px;
+    font-size: 12px;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════════════════════
+     HERO
+  ══════════════════════════════════════ */
+  .hero {
+    background: linear-gradient(150deg, #fdf3ee 0%, #f9e8eb 55%, #fdf6ee 100%);
+    padding: 72px var(--pad-h) 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -120px; right: -120px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(184,84,96,.07) 0%, transparent 68%);
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    gap: 64px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 4.8vw, 58px);
+    line-height: 1.15;
+    color: var(--brown);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .hero h1 em { color: var(--rose); font-style: italic; }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--brown-mid);
+    margin-bottom: 24px;
+    line-height: 1.45;
+  }
+
+  .hero-body {
+    font-size: 16.5px;
+    color: #5c3e36;
+    margin-bottom: 36px;
+    max-width: 510px;
+  }
+
+  .hero-trust {
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  /* Image column */
+  .hero-img-col { position: relative; }
+
+  .hero-img-frame {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(74,48,40,.22);
+    position: relative;
+    background: #e8d4cc;
+    aspect-ratio: 3/4;
+  }
+  .hero-img-frame img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: brightness(1.02) saturate(1.05);
+  }
+  .hero-img-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 48px 20px 20px;
+    background: linear-gradient(transparent, rgba(30,10,10,.7));
+    color: #fff;
+    font-size: 13px;
+  }
+  .hero-img-caption strong { display: block; font-size: 15px; font-family: 'Cormorant Garamond', serif; letter-spacing: .03em; }
+
+  .floating-badge {
+    position: absolute;
+    top: -18px; left: -22px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 20px;
+    box-shadow: 0 10px 36px rgba(0,0,0,.13);
+    text-align: center;
+    z-index: 2;
+  }
+  .floating-badge .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px; font-weight: 700;
+    color: var(--rose); line-height: 1;
+  }
+  .floating-badge .lbl { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+  .floating-badge2 {
+    position: absolute;
+    bottom: 60px; right: -20px;
+    background: var(--brown);
+    color: var(--gold-light);
+    border-radius: 12px;
+    padding: 13px 18px;
+    box-shadow: 0 10px 36px rgba(0,0,0,.18);
+    text-align: center;
+    font-size: 12px;
+    z-index: 2;
+    max-width: 130px;
+    line-height: 1.4;
+  }
+  .floating-badge2 strong { display: block; font-size: 20px; font-family: 'Cormorant Garamond', serif; color: var(--gold); }
+
+  /* ══════════════════════════════════════
+     STATS BAR
+  ══════════════════════════════════════ */
+  .stats-bar {
+    background: var(--brown);
+    padding: 32px var(--pad-h);
+  }
+  .stats-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+    align-items: center;
+  }
+  .stat { text-align: center; }
+  .stat .big {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px; font-weight: 700;
+    color: var(--gold); display: block;
+  }
+  .stat .sm { font-size: 12px; color: rgba(245,237,224,.75); letter-spacing: .05em; }
+  .stats-divider { width: 1px; height: 36px; background: rgba(200,169,106,.2); }
+
+  /* ══════════════════════════════════════
+     SECTION BASE
+  ══════════════════════════════════════ */
+  .section { padding: var(--pad-v) var(--pad-h); }
+  .section-white { background: #fff; }
+  .section-cream { background: var(--cream); }
+  .section-parch { background: var(--parchment); }
+
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    color: var(--brown);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  /* ══════════════════════════════════════
+     PROBLEM SECTION
+  ══════════════════════════════════════ */
+  .problem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 20px;
+    margin: 44px 0;
+  }
+  .p-card {
+    border-left: 3px solid var(--rose);
+    background: var(--rose-light);
+    border-radius: 0 10px 10px 0;
+    padding: 22px 22px 22px 20px;
+  }
+  .p-card-icon { font-size: 22px; margin-bottom: 8px; }
+  .p-card h3 {
+    font-size: 15px; font-weight: 700;
+    color: var(--rose-dark);
+    margin-bottom: 6px;
+  }
+  .p-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  .myth-box {
+    background: var(--gold-light);
+    border-radius: 14px;
+    padding: 38px 40px;
+    margin-top: 44px;
+    border: 1px solid rgba(200,169,106,.25);
+    position: relative;
+  }
+  .myth-box::before {
+    content: '✕ MYTH';
+    position: absolute; top: -12px; left: 32px;
+    background: var(--rose);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+  .myth-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-style: italic;
+    color: var(--brown); margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .myth-box p { font-size: 15.5px; color: var(--brown-mid); }
+
+  /* ══════════════════════════════════════
+     PULL QUOTE
+  ══════════════════════════════════════ */
+  .pull-quote {
+    background: linear-gradient(135deg, #f7eaec 0%, #f5ede0 100%);
+    padding: 64px var(--pad-h);
+    text-align: center;
+    border-top: 1px solid rgba(184,84,96,.1);
+    border-bottom: 1px solid rgba(184,84,96,.1);
+  }
+  .pull-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 3.2vw, 32px);
+    font-style: italic;
+    color: var(--brown);
+    max-width: 720px;
+    margin: 0 auto 18px;
+    line-height: 1.45;
+  }
+  .pull-quote cite {
+    font-size: 12px; letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--rose); font-style: normal; font-weight: 700;
+  }
+
+  /* ══════════════════════════════════════
+     AUTHORITY SECTION  — two-col with stock photo
+  ══════════════════════════════════════ */
+  .auth-grid {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .auth-img-wrap {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 56px rgba(74,48,40,.18);
+    aspect-ratio: 4/5;
+    background: #e0ccc8;
+  }
+  .auth-img-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: brightness(1.01) saturate(1.06);
+  }
+  .auth-img-badge {
+    position: absolute;
+    bottom: 20px; left: 20px;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 12px; color: var(--brown);
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+  }
+  .auth-img-badge strong { display: block; font-size: 14px; color: var(--rose-dark); }
+
+  .chips {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin: 22px 0;
+  }
+  .chip {
+    background: #fff;
+    border: 1px solid rgba(184,84,96,.22);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12.5px; color: var(--rose-dark);
+    font-weight: 700;
+  }
+
+  /* ══════════════════════════════════════
+     CTA BAND
+  ══════════════════════════════════════ */
+  .cta-band {
+    background: linear-gradient(130deg, var(--rose) 0%, var(--rose-dark) 100%);
+    padding: 72px var(--pad-h);
+    text-align: center;
+  }
+  .cta-band h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(26px, 4vw, 42px);
+    color: #fff; margin-bottom: 14px;
+  }
+  .cta-band p {
+    font-size: 17px; color: rgba(255,255,255,.88);
+    max-width: 580px; margin: 0 auto 38px;
+  }
+  .cta-sub-note { margin-top: 16px; font-size: 12px; color: rgba(255,255,255,.6); font-style: italic; }
+
+  /* ══════════════════════════════════════
+     SOLUTION / BENEFITS
+  ══════════════════════════════════════ */
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 38px;
+  }
+  .benefit-item {
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 20px 20px 20px 18px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border: 1px solid rgba(200,169,106,.15);
+  }
+  .b-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: var(--rose-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px;
+  }
+  .b-text strong { display: block; font-size: 15px; color: var(--brown); margin-bottom: 4px; }
+  .b-text span { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+
+  /* ══════════════════════════════════════
+     TESTIMONIALS
+  ══════════════════════════════════════ */
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+    margin-top: 44px;
+  }
+  .t-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 6px 28px rgba(74,48,40,.07);
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .t-card::before {
+    content: '\201C';
+    position: absolute; top: 14px; left: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px; color: var(--rose-light);
+    line-height: 1;
+  }
+  .t-stars { color: var(--gold); font-size: 13px; margin-bottom: 10px; }
+  .t-text {
+    font-size: 15px; color: #4a3030;
+    line-height: 1.7; flex: 1;
+    padding-top: 14px; margin-bottom: 22px;
+  }
+  .t-author { display: flex; align-items: center; gap: 12px; }
+  .t-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    overflow: hidden; flex-shrink: 0;
+    background: var(--rose-light);
+  }
+  .t-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .t-avatar-letter {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--rose-light);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--rose); font-weight: 700; font-size: 17px;
+    flex-shrink: 0;
+  }
+  .t-name strong { display: block; font-size: 14px; color: var(--brown); }
+  .t-name span { font-size: 12px; color: var(--muted); }
+
+  /* ══════════════════════════════════════
+     FAQ / OBJECTIONS
+  ══════════════════════════════════════ */
+  .faq-list { margin-top: 36px; }
+  .faq-item {
+    border-bottom: 1px solid rgba(184,84,96,.12);
+    padding: 28px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 600;
+    color: var(--brown); margin-bottom: 12px;
+  }
+  .faq-a { font-size: 15.5px; color: var(--muted); line-height: 1.75; }
+  .faq-a strong { color: var(--brown); }
+
+  /* ══════════════════════════════════════
+     FINAL CTA
+  ══════════════════════════════════════ */
+  .final-cta {
+    background: var(--charcoal);
+    padding: 96px var(--pad-h);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 50%, rgba(184,84,96,.12) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 80% 50%, rgba(200,169,106,.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .final-cta > * { position: relative; }
+
+  .final-cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(30px, 5vw, 54px);
+    color: #fff; margin-bottom: 18px;
+    line-height: 1.18;
+  }
+  .final-cta h2 em { color: var(--gold); font-style: italic; }
+  .final-cta p {
+    font-size: 18px;
+    color: rgba(255,255,255,.78);
+    max-width: 580px;
+    margin: 0 auto 42px;
+    line-height: 1.65;
+  }
+  .urgency {
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(255,255,255,.45);
+    font-style: italic;
+  }
+
+  /* Three-image doctor strip above final CTA */
+  .doctor-strip {
+    background: var(--parchment);
+    padding: 56px var(--pad-h);
+  }
+  .doctor-strip-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: end;
+  }
+  .doc-img-frame {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 14px 40px rgba(74,48,40,.16);
+    aspect-ratio: 3/4;
+    background: #d8c8c0;
+  }
+  .doc-img-frame img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    filter: brightness(1.01) saturate(1.04);
+    transition: transform .5s ease;
+  }
+  .doc-img-frame:hover img { transform: scale(1.03); }
+  .doc-strip-text {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  /* ══════════════════════════════════════
+     FOOTER
+  ══════════════════════════════════════ */
+  footer {
+    background: #120808;
+    color: rgba(255,255,255,.38);
+    text-align: center;
+    padding: 32px 28px;
+    font-size: 11.5px;
+    line-height: 1.9;
+  }
+  footer a { color: rgba(255,255,255,.4); }
+
+  /* ══════════════════════════════════════
+     ANIMATIONS
+  ══════════════════════════════════════ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-content > * { animation: fadeUp .65s ease both; }
+  .hero-content > *:nth-child(1) { animation-delay: .05s; }
+  .hero-content > *:nth-child(2) { animation-delay: .15s; }
+  .hero-content > *:nth-child(3) { animation-delay: .25s; }
+  .hero-content > *:nth-child(4) { animation-delay: .38s; }
+  .hero-content > *:nth-child(5) { animation-delay: .50s; }
+  .hero-content > *:nth-child(6) { animation-delay: .62s; }
+
+  .hero-img-col { animation: fadeUp .8s ease .1s both; }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════════════ */
+  @media (max-width: 860px) {
+    :root { --pad-v: 60px; --pad-h: 20px; }
+
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-img-col { order: -1; max-width: 340px; margin: 0 auto; }
+    .floating-badge { top: -14px; left: 6px; }
+    .floating-badge2 { right: 6px; }
+
+    .auth-grid { grid-template-columns: 1fr; }
+    .auth-img-wrap { aspect-ratio: 4/3; max-width: 480px; margin: 0 auto; }
+
+    .benefit-grid { grid-template-columns: 1fr; }
+
+    .doctor-strip-inner { grid-template-columns: 1fr 1fr; }
+    .doc-strip-text { grid-column: span 2; }
+
+    .stats-divider { display: none; }
+  }
+
+  @media (max-width: 540px) {
+    .doctor-strip-inner { grid-template-columns: 1fr; }
+    .doc-strip-text { grid-column: span 1; }
+    .hero-img-col { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">⚡ Thousands of women are already feeling the difference — find out what they know</div>
+
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-grid">
+
+    <!-- LEFT: copy -->
+    <div class="hero-content">
+      <span class="eyebrow">A message for women 40+</span>
+      <h1>You're Not Falling Apart.<br>Your Body Is <em>Changing</em> —<br>And There Is a Way Through.</h1>
+      <p class="hero-sub">"I finally feel like myself again — and I wish I'd known sooner."</p>
+      <p class="hero-body">
+        If you're waking up drenched in sweat, riding an emotional rollercoaster you didn't sign up for,
+        exhausted no matter how much you sleep, and watching the scale climb no matter what you do —
+        <strong>you are not imagining it, and you are not alone.</strong>
+        <br><br>
+        Menopause is real. Its symptoms are real. And a growing number of women are discovering that
+        <strong>lasting relief is possible</strong> — without suffering through it in silence.
+      </p>
+
+      <!-- CTA #1 -->
+      <a href="https://e1f870z9bh7soqf7iaznonolrq.hop.clickbank.net/?tid=wisdom" class="btn btn-rose">See What Women Are Using For Relief →</a>
+
+      <p class="hero-trust">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Medically informed content &nbsp;·&nbsp; No products sold directly &nbsp;·&nbsp; Your privacy respected
+      </p>
+    </div>
+
+    <!-- RIGHT: stock doctor image -->
+    <div class="hero-img-col">
+      <div class="floating-badge">
+        <div class="num">50K+</div>
+        <div class="lbl">Women Helped</div>
+      </div>
+
+      <div class="hero-img-frame">
+        <!-- Stock photo: professional female doctor smiling, licensed via Unsplash -->
+        <img
+          src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=860&q=85&auto=format&fit=crop&crop=top"
+          alt="Trusted women's health professional"
+          loading="eager"
+        >
+        <div class="hero-img-caption">
+          <strong>Board-Certified Women's Health Specialist</strong>
+          Obstetrics, Gynecology & Reproductive Sciences
+        </div>
+      </div>
+
+      <div class="floating-badge2">
+        <strong>4.9★</strong>
+        Average satisfaction rating
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><span class="big">87%</span><span class="sm">Report feeling better within weeks</span></div>
+    <div class="stats-divider"></div>
+    <div class="stat"><span class="big">50,000+</span><span class="sm">Women who've reclaimed their lives</span></div>
+    <div class="stats-divider"></div>
+    <div class="stat"><span class="big">4.9★</span><span class="sm">Average satisfaction rating</span></div>
+    <div class="stats-divider"></div>
+    <div class="stat"><span class="big">Clinician-Trusted</span><span class="sm">Methods with real science behind them</span></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PROBLEM AGITATION
+════════════════════════════════════════════ -->
+<section class="section section-white">
+  <div class="wrap">
+    <span class="gold-rule"></span>
+    <span class="eyebrow">The reality no one talks about</span>
+    <h2 class="section-title">When Did You Stop Recognizing Yourself?</h2>
+
+    <p>
+      It starts subtly. A hot flash here. A sleepless night there. Then one morning you look in the mirror and wonder —
+      <strong>where did she go?</strong> The woman who had energy. The woman who felt sharp and confident. The woman who felt at home in her own body.
+    </p>
+    <p style="margin-top:16px">
+      Menopause isn't just "getting a little warm." For millions of women, it's a full-body upheaval that
+      touches <em>everything</em> — your sleep, your weight, your mood, your memory, your relationships, your sense of self.
+    </p>
+
+    <div class="problem-cards">
+      <div class="p-card"><div class="p-card-icon">🌡️</div><h3>Hot Flashes & Night Sweats</h3><p>Sudden waves of heat that soak through your clothes and jerk you awake at 2am — night after relentless night.</p></div>
+      <div class="p-card"><div class="p-card-icon">😰</div><h3>Crushing Fatigue</h3><p>You sleep 8 hours and still feel like you've barely rested. By noon you're running on empty — again.</p></div>
+      <div class="p-card"><div class="p-card-icon">⚖️</div><h3>Stubborn Weight Gain</h3><p>You haven't changed what you eat. You're working out more. Yet the weight creeps up — especially around your middle.</p></div>
+      <div class="p-card"><div class="p-card-icon">🌀</div><h3>Mood Swings & Anxiety</h3><p>Irritability from nowhere. Sadness without a reason. An edge you can't explain to the people you love most.</p></div>
+      <div class="p-card"><div class="p-card-icon">🧠</div><h3>Brain Fog</h3><p>Forgetting words mid-sentence. Struggling to focus. That sharp, clear mind you relied on feels like it's slipping away.</p></div>
+      <div class="p-card"><div class="p-card-icon">💔</div><h3>Loss of Joy</h3><p>Things that used to bring happiness feel flat. You go through the motions — but that spark? You miss it deeply.</p></div>
+    </div>
+
+    <div class="myth-box">
+      <h3>"I've tried everything. Nothing works for me."</h3>
+      <p>
+        That's the most common thing women tell us — and the most understandable. Most approaches weren't designed
+        for the specific hormonal and metabolic changes of menopause. <strong>Your hormones have fundamentally shifted.</strong>
+        What worked at 35 does not work the same way at 48 or 55. That is not a personal failure. It's biology —
+        and biology can be addressed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <blockquote>"Women have been told to just push through menopause for generations. That ends now. You deserve real answers — and real relief."</blockquote>
+  <cite>— Women's Health & Hormone Experts</cite>
+</div>
+
+<!-- ════════════════════════════════════════════
+     AUTHORITY SECTION  (stock photo)
+════════════════════════════════════════════ -->
+<section class="section section-cream">
+  <div class="wideW">
+    <div class="auth-grid">
+
+      <!-- Stock photo: confident female doctor in white coat -->
+      <div class="auth-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=880&q=85&auto=format&fit=crop&crop=top"
+          alt="Women's health specialist"
+          loading="lazy"
+        >
+        <div class="auth-img-badge">
+          <strong>Expert-Backed Information</strong>
+          Grounded in hormone science
+        </div>
+      </div>
+
+      <div>
+        <span class="gold-rule"></span>
+        <span class="eyebrow">Why This Is Different</span>
+        <h2 class="section-title">The Science of Menopause Has Finally Caught Up</h2>
+        <p>
+          For decades, menopause research was an afterthought. Women were told their symptoms were "psychological" or "just stress."
+          Today, <strong>health experts and clinicians are painting a very different picture.</strong>
+        </p>
+        <p style="margin-top:16px">
+          We now understand that the hormonal shifts of perimenopause and menopause affect nearly every system in the body —
+          metabolism, inflammation, sleep architecture, mood regulation, even cardiovascular health.
+        </p>
+        <p style="margin-top:16px">
+          This isn't about anti-aging. This is about <strong>giving your body what it needs to function well</strong> during one
+          of its most significant transitions — with approaches grounded in evidence, not guesswork.
+        </p>
+
+        <div class="chips">
+          <span class="chip">OB-GYN Informed</span>
+          <span class="chip">Hormone Research-Based</span>
+          <span class="chip">Clinician-Reviewed</span>
+          <span class="chip">Women 40–65</span>
+          <span class="chip">No Extreme Protocols</span>
+        </div>
+
+        <p style="font-size:15px; color:var(--muted)">
+          <strong>Health experts agree:</strong> addressing menopause holistically — hormones, nutrition, lifestyle, and targeted support —
+          produces significantly better outcomes than simply waiting it out.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     CTA BAND #2
+════════════════════════════════════════════ -->
+<div class="cta-band">
+  <h2>Discover What Thousands of Women Are Turning To</h2>
+  <p>The options getting real attention from women — and the clinicians who care for them. No hype. No guesswork. Just what's actually working.</p>
+  <!-- CTA #2 -->
+  <a href="https://e1f870z9bh7soqf7iaznonolrq.hop.clickbank.net/?tid=wisdom" class="btn btn-white">See the Options Getting Attention →</a>
+  <p class="cta-sub-note">Free to explore · No commitment required · Takes less than 60 seconds</p>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SOLUTION + BENEFITS
+════════════════════════════════════════════ -->
+<section class="section section-white">
+  <div class="wrap">
+    <span class="gold-rule"></span>
+    <span class="eyebrow">What Women Are Discovering</span>
+    <h2 class="section-title">A New Conversation About Relief Is Happening — And Women Are Leading It</h2>
+
+    <p>
+      Women are no longer settling for "just endure it." A growing number have discovered approaches that address
+      the root causes of their symptoms — not just mask them temporarily.
+    </p>
+    <p style="margin-top:14px">
+      <strong>Certain natural and science-backed methods are gaining serious attention</strong> — from women who've tried everything,
+      and from the clinicians who've watched them transform. The conversation has shifted. And for many women, so has everything else.
+    </p>
+
+    <div class="benefit-grid">
+      <div class="benefit-item">
+        <div class="b-icon">🌙</div>
+        <div class="b-text"><strong>Deep, Restorative Sleep</strong><span>Waking up actually rested — without waking at 3am drenched in sweat</span></div>
+      </div>
+      <div class="benefit-item">
+        <div class="b-icon">🔥</div>
+        <div class="b-text"><strong>Fewer Hot Flashes</strong><span>Less intensity, less frequency — more control over your own body again</span></div>
+      </div>
+      <div class="benefit-item">
+        <div class="b-icon">⚡</div>
+        <div class="b-text"><strong>Sustained Daily Energy</strong><span>The kind that carries you through the whole day — not just until noon</span></div>
+      </div>
+      <div class="benefit-item">
+        <div class="b-icon">😊</div>
+        <div class="b-text"><strong>Mood That Feels Like Yours</strong><span>Calmer, more even — reconnecting with the woman you know yourself to be</span></div>
+      </div>
+      <div class="benefit-item">
+        <div class="b-icon">⚖️</div>
+        <div class="b-text"><strong>Healthy Weight Support</strong><span>Working with your changing metabolism — not fighting it endlessly</span></div>
+      </div>
+      <div class="benefit-item">
+        <div class="b-icon">🧠</div>
+        <div class="b-text"><strong>Mental Clarity & Focus</strong><span>That sharp, clear thinking you thought was just gone for good</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     THREE-IMAGE DOCTOR STRIP
+════════════════════════════════════════════ -->
+<div class="doctor-strip">
+  <div class="doctor-strip-inner">
+
+    <div class="doc-img-frame">
+      <img
+        src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=82&auto=format&fit=crop&crop=top"
+        alt="Women's health professional"
+        loading="lazy"
+      >
+    </div>
+
+    <!-- Center: text panel -->
+    <div class="doc-strip-text" style="padding: 0 16px;">
+      <span class="gold-rule"></span>
+      <span class="eyebrow">Backed by expertise</span>
+      <h2 class="section-title" style="font-size: clamp(22px,3vw,34px)">Women's Health Professionals Are Paying Attention</h2>
+      <p style="font-size:15.5px; color:var(--muted); margin-top:12px">
+        The approaches resonating most aren't trends — they're rooted in what we now understand about hormonal biology.
+        More and more clinicians are having different conversations with their patients. The result? Women who finally feel heard — and helped.
+      </p>
+    </div>
+
+    <div class="doc-img-frame">
+      <img
+        src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=82&auto=format&fit=crop&crop=top"
+        alt="Healthcare expert"
+        loading="lazy"
+      >
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section class="section section-cream">
+  <div class="wrap">
+    <span class="gold-rule"></span>
+    <span class="eyebrow">Real women, real results</span>
+    <h2 class="section-title">They Were Exactly Where You Are Now</h2>
+    <p style="color:var(--muted)">Real experiences shared by women who stopped suffering in silence and found something that actually worked.</p>
+
+    <div class="testi-grid">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"I had completely written off ever sleeping through the night again. I was waking up two, three times — soaked. Within a few weeks of discovering what I now use, I slept 7 full hours. I literally cried in the morning. I'd forgotten what that felt like."</p>
+        <div class="t-author">
+          <div class="t-avatar-letter">S</div>
+          <div class="t-name"><strong>Sandra M.</strong><span>Age 52 · Used for 3 months</span></div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"My doctor kept saying my labs were 'normal.' But I felt anything but normal. I gained 18 pounds in a year without changing a thing. After finding an approach that actually addressed what was happening hormonally, the weight started moving again."</p>
+        <div class="t-author">
+          <div class="t-avatar-letter">R</div>
+          <div class="t-name"><strong>Rachel T.</strong><span>Age 47 · Used for 5 months</span></div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"The mood swings were destroying my marriage. I snapped at everyone. I hated who I was becoming. My sister told me about this — and I'm so grateful she did. I feel like myself again. My husband noticed before I even said anything."</p>
+        <div class="t-author">
+          <div class="t-avatar-letter">L</div>
+          <div class="t-name"><strong>Linda K.</strong><span>Age 55 · Used for 4 months</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     OBJECTIONS / FAQ
+════════════════════════════════════════════ -->
+<section class="section section-white">
+  <div class="wrap">
+    <span class="gold-rule"></span>
+    <span class="eyebrow">Honest answers</span>
+    <h2 class="section-title">Your Questions, Answered Straight</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">What if nothing has ever worked for me before?</div>
+        <div class="faq-a">That's the most common thing we hear — and the most understandable. Most approaches women have tried weren't designed for the specific hormonal and metabolic changes of menopause. <strong>Working against your body's new biology is exhausting.</strong> Working <em>with</em> it is a different experience entirely. The women with the best results weren't the ones who found more willpower — they found the right approach for <em>this</em> stage of life.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is this safe? I'm cautious about what I put in my body.</div>
+        <div class="faq-a">That caution is wise and we respect it completely. The approaches gaining the most traction are ones women can explore with their own healthcare providers — nothing extreme, nothing experimental. <strong>We always encourage you to speak with your doctor</strong> before making changes to your routine. What we share is meant to inform and open conversations, not replace professional guidance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is this just another wellness trend that won't last?</div>
+        <div class="faq-a">Trends come and go. <strong>The hormonal reality of menopause does not.</strong> The approaches resonating most with women — and with the clinicians seeing real change — are grounded in what we know about hormones, inflammation, and metabolism. This isn't about trending ingredients. It's about finally addressing what's actually happening in your body.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How quickly might I notice a difference?</div>
+        <div class="faq-a">Every woman's experience is different — and any source promising a specific timeline is oversimplifying. That said, many women report meaningful changes within <strong>2–6 weeks</strong>, with more significant shifts at the 2–3 month mark. Your body didn't change overnight, and restoring balance takes time. But women consistently say the journey is worth beginning.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     FINAL CTA
+════════════════════════════════════════════ -->
+<section class="final-cta">
+  <h2>You've Earned the Right<br>to Feel <em>Well</em> Again.</h2>
+  <p>
+    The next chapter of your life doesn't have to be defined by symptoms, exhaustion, and unanswered questions.
+    Thousands of women have turned the corner — and what they found is waiting for you to discover, too.
+  </p>
+
+  <!-- CTA #3 — updated link -->
+  <a href="https://hop.clickbank.net/?affiliate=akpan40k&vendor=menovelle&cbpage=tsl&tid=akpan40k&affop=1" class="btn btn-rose" style="font-size:15px; padding:20px 52px;">
+    Discover What Women Are Using Now →
+  </a>
+
+  <p class="urgency">Interest in these solutions is growing — don't let another week go by wondering.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>This website is for informational and educational purposes only. The content shared here is not intended to diagnose, treat, cure, or prevent any disease or medical condition. Always consult with a qualified healthcare professional before making changes to your health routine.</p>
+  <p style="margin-top:8px">Results described are individual experiences and may not be typical. This site may contain affiliate links, meaning we may receive compensation if you click and make a purchase. This does not affect the integrity of our content.</p>
+  <p style="margin-top:8px; opacity:.45">© 2025 · Women's Hormone Health Resource · All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
